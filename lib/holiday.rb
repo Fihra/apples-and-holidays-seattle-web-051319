@@ -91,7 +91,7 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.collect {|holiday, supply|
       supply.has_value?("BBQ")
         holiday
-      end
+      
     }
   }
 
