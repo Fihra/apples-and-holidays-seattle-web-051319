@@ -68,7 +68,8 @@ def all_supplies_in_holidays(holiday_hash)
     puts season.to_s.capitalize! + ":"
     #iterate next tier of holiday-supply key-value pair
     holiday.each do |holiday, supply|
-      #
+      #creates a string of each supply in the array from the value
+      #joining each element with a comma and space
       supply = supply.join(", ")
       holiday = holiday.to_s.split("_").map {|v|
         v.capitalize}.join(" ") + ":"
