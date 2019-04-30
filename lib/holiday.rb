@@ -71,6 +71,8 @@ def all_supplies_in_holidays(holiday_hash)
       #creates a string of each supply in the array from the value
       #joining each element with a comma and space
       supply = supply.join(", ")
+      #create variable for each holiday
+      #convert holiday key to string
       holiday = holiday.to_s.split("_").map {|v|
         v.capitalize}.join(" ") + ":"
         puts "  " + holiday + " " + supply
