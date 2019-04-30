@@ -91,7 +91,6 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.collect {|holiday, supply|
       if supply.include?("BBQ")
         holiday = holiday.compact.delete_if{|h| h == ""}
-        holiday
       end
     }
   }
