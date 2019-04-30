@@ -68,7 +68,6 @@ def all_supplies_in_holidays(holiday_hash)
       holiday = holiday.to_s.split("_").map {|v|
         v.capitalize}.join(" ") + ":"
         puts "  " + holiday + " " + supplies
-      end
     end
   end
 end
