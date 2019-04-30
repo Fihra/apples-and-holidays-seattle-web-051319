@@ -61,12 +61,7 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  new_hash = Hash.new
-  holiday_hash.each{|season, holiday|
-    new_hash[season.to_s] = holiday}
-
-  end
-  return new_hash
+  
 end
 
 def all_holidays_with_bbq(holiday_hash)
