@@ -65,7 +65,7 @@ def all_supplies_in_holidays(holiday_hash)
     #as a key-value pair
     #convert season to string then capitalize
     #(!) bang operator to change original string
-    puts season.to_s.capitalize! + ":" 
+    puts season.to_s.capitalize! + ":"
     #iterate next tier of holiday-supply key-value pair
     holiday.each do |holiday, supply|
       #
